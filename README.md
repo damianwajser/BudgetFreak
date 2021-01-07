@@ -12,21 +12,18 @@
 ## How to contribute
 
 See our [contribution guide](https://github.com/BudgetFreak/BudgetFreak/blob/master/.github/CONTRIBUTING.md).
-
-Regular **Markdown** here.
-
-
-<div hidden>
-```
-@startuml firstDiagram
-
-Alice -> Bob: Hello
-Bob -> Alice: Hi!
-		
+```plantuml
+@startuml
+    skinparam backgroundColor #EEEBDC
+    skinparam handwritten true
+    actor Customer
+    Customer -> "login()" : username & password
+    "login()" -> Customer : session token
+    activate "login()"
+    Customer -> "placeOrder()" : session token, order info
+    "placeOrder()" -> Customer : ok
+    Customer -> "logout()"
+    "logout()" -> Customer : ok
+    deactivate "login()"
 @enduml
 ```
-</div>
-
-![](firstDiagram.svg)
-
-Some more markdown.
