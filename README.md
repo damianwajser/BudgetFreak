@@ -12,16 +12,20 @@
 ## How to contribute
 
 See our [contribution guide](https://github.com/BudgetFreak/BudgetFreak/blob/master/.github/CONTRIBUTING.md).
+
 Regular **Markdown** here.
 
-<!--
+
+<div hidden>
+```
 @startuml firstDiagram
 
 Alice -> Bob: Hello
 Bob -> Alice: Hi!
-	
+		
 @enduml
--->
+```
+</div>
 
 ![](firstDiagram.svg)
 
